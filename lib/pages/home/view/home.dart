@@ -24,25 +24,25 @@ class HomeScreen extends StatelessWidget {
                 style: TextStyle(fontSize: 24),
               ),
             ),
-            FlatButton(
+            OutlinedButton(
               onPressed: () {
                 // Get.toNamed("/detail");
                 // print(apiService.fetchTextFromApi());
                 homeController.increment();
               },
               child: Text("Increment"),
-              color: Colors.black,
-              textColor: Colors.white,
+              //color: Colors.black,
+              //textColor: Colors.white,
             ),
-            FlatButton(
+            OutlinedButton(
               onPressed: () {
                 // Get.defaultDialog(title: "This is dialog");
                 Get.snackbar("Title", "This is getx snackbar", snackPosition: SnackPosition.BOTTOM);
                 // Get.toNamed("/detail");
               },
               child: Text("Go to detail"),
-              color: Colors.red,
-              textColor: Colors.white,
+              //color: Colors.red,
+              //textColor: Colors.white,
             )
           ],
         ),
